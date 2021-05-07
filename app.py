@@ -111,7 +111,7 @@ try:
     csv = df1.to_csv(index=False)
     b64 = base64.b64encode(csv.encode()).decode()
     st.markdown('### ** ⬇️ Download the selected table to CSV **')
-    href = f'<a href="data:file/csv;base64,{b64}" download="filtered_table.csv">** Click here to get your prize! 🎉**</a>'
+    href = f'<a href="data:file/csv;base64,{b64}" download="filtered_table.csv">** Download file! **</a>'
     st.markdown(href, unsafe_allow_html=True)
 
 except NameError:
@@ -119,5 +119,5 @@ except NameError:
 
 st.markdown("---")
 
-st.markdown('*Made with* :heart: * by [@DataChaz ](https://twitter.com/DataChaz)* [![this is an image link](https://i.imgur.com/Ltgzb7Y.png)](https://www.buymeacoffee.com/cwar05)')
+# st.markdown('*Made * by [@cristianmonroy ](https://twitter.com/cristianmonroy)* [![this is an image link](https://i.imgur.com/Ltgzb7Y.png)](https://www.buymeacoffee.com/cristianmonroy)')
 
