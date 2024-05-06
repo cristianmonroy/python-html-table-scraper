@@ -1,4 +1,6 @@
 streamlit
+streamlit_shadcn_ui
+
 requests==2.24.0
 pandas==1.0.5
 numpy==1.19.0
@@ -7,4 +9,3 @@ lxml==4.5.1
 
 beautifulsoup4==4.9.1
 html5lib
-streamlit_shadcn_ui
