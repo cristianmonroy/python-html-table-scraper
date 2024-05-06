@@ -4,8 +4,6 @@ import pandas as pd
 import numpy as np
 import requests
 import base64
-import streamlit_shadcn_ui as ui
-
 
 
 def _max_width_():
@@ -24,7 +22,7 @@ def _max_width_():
 _max_width_()
 
 
-st.title("🌐 HTML Table Scraper 🕸️")
+st.title("🌐 HTML Table Scraper")
 st.markdown(" A simple HTML table scraper made in Python 🐍 & the amazing [Streamlit!](https://www.streamlit.io/) ")
 
 st.markdown('### **1️⃣ Enter a URL to scrape **')
@@ -62,7 +60,7 @@ try:
             
             #st.write("This webpage contains " + str(length) + " tables" )
 
-            if ui.link_button("Show scraped tables"):
+            if st.button("Show scraped tables"):
                 st.table(df)
             else: st.empty()
 
