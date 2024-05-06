@@ -4,6 +4,8 @@ import pandas as pd
 import numpy as np
 import requests
 import base64
+import streamlit_shadcn_ui as ui
+
 
 
 def _max_width_():
@@ -60,7 +62,7 @@ try:
             
             #st.write("This webpage contains " + str(length) + " tables" )
 
-            if st.button("Show scraped tables"):
+            if ui.link_button("Show scraped tables"):
                 st.table(df)
             else: st.empty()
 
